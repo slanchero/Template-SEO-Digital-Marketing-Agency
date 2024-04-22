@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+}
+
+header {
+    background: #34ccc5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 50px;
+}
+
+header .logo {
+    display: flex;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+header .logo img {
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+}
+
+header .nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header .nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header .nav ul li {
+    margin: 0 20px;
+    font-size: 0.8rem;
+}
+
+header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .btn {
+    align-items: center;
+}
+
+header .btn button {
+    background: #4671cb;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px #fff;
+}
+
+main .banner {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+main .banner .bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .banner .bg .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 80vh;
+}
+
+main .banner .bg .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: auto;
+}
+
+main .banner .info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+main .banner .info .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px 50px;
+}
+
+main .banner .info .left .more {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+main .banner .info .left .more div .bottom {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .banner .info .left .text h2 {
+    font-size: 5rem;
+    background: linear-gradient(45deg, #fa9a4e, #fd6961);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+main .banner .info .left .text h2:after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    visibility: hidden;
+}
+
+main .banner .info .left .btn button {
+    align-self: normal;
+    margin-top: 40px;
+}
+
+main .banner .info .left .btn button {
+    background: #34ccc5;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px #648ad3;
+}
+
+main .banner .info .right {
+    padding-top: 20vh;
+    padding-right: 20px;
+}
+
+main .banner .info .right img {
+    width: 90%;
+    height: auto;
+}
+
+main .group{
+    margin: 0 5%;
+    margin-top: 10%;
+    background: #f5f5f5;
+    border-radius: 30px;
+}
+
+main .group .services {
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #e9e9e9;
+}
+
+main .group .services .service{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .group .services .service .number {
+    position: relative;
+    text-align: center;
+    bottom: 25px;
+}
+
+main .group .services .service .number img{ 
+    width: 80px;
+}
+
+main .group .services .service .number p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .group .services .service .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .group .services .service .top p{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .group .services .service .top img{
+    width: auto;
+    height: 50px;
+}
+
+main .group .services .service .top hr{
+    width: 70px;
+    border: 1px solid #bcf4ef;
+}
+
+main .group .services .service p{
+    width: 90%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: lighter;
+    line-height: 1.7;
+}
+
+main .group .portfolio{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+main .group .portfolio div{
+    display: flex;
+    justify-content: center;
+}
+
+main .group .portfolio div .circular{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c60{
+    background:conic-gradient(#fc6a55 216deg, #ededed 0deg);
+}
+
+.c80{
+    background:conic-gradient(#fc6a55 288deg, #ededed 0deg);
+}
+
+.c90{
+    background:conic-gradient(#fc6a55 324deg, #ededed 0deg);
+}
+
+.c70{
+    background:conic-gradient(#fc6a55 252deg, #ededed 0deg);
+}
+
+main .group .portfolio div .circular:before{
+    content: "";
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+
+    background: #fff;
+}
+
+main .group .portfolio div .circular .progress{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color: fc6a55;
+}
+
+main .group .portfolio div .circular .text{
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    color: fc6a55;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p{
+    margin-top: 10px;
+}
+
+footer a {
+    color: #38ccc6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
